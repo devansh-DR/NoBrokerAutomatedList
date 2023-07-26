@@ -27,16 +27,16 @@ time.sleep(3)
 for n in range(len(Flat_link)):
     # link and description input
     description_input = driver.find_element(By.XPATH,
-                                            '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div[2]/textarea')
+                                            'COPY XPATH FROM FORM DESCRIPTION INPUT OF GOOGLE FORM')
     description_input.send_keys(Flat_description[n])
 
     Link_input = driver.find_element(By.XPATH,
-                                     '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[1]/input')
+                                     "COPY XPATH FROM FORM LINK INPUT OF GOOGLE FORM")
     Link_input.send_keys(Flat_link[n])
 
     time.sleep(1)
     # submit button
-    submit_button = driver.find_element(By.CLASS_NAME, 'NPEfkd')
+    submit_button = driver.find_element(By.XPATH, "COPY XPATH FROM SUBMIT BUTTON")
     submit_button.click()
 
     time.sleep(1)
